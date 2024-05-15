@@ -2,6 +2,7 @@ import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Homepage from './pages/Homepage'
 import Amenities from './pages/Amenities'
+import AmDetailContainer from './AmDetailContainer/AmDetailContainer'
 
 
 function App() {
@@ -14,10 +15,7 @@ function App() {
           <Routes>
             <Route path= '/' element= {<Homepage/>} />
             <Route path= '/amenities' element= {<Amenities/>} />
-            {/* <Route path= '/product/:id' element= {<ItemDetailContainer/>} />
-            <Route path= '/servicios' element= {<Servicios/>} />
-            <Route path= '/estudio' element= {<Estudio/>} />
-            <Route path= '/contacto' element= {<Contact/>} /> */}
+            <Route path= '/amenities/:id' element= {<AmDetailContainer/>} />
           </Routes>
       {/* <Footer/> */}
     </BrowserRouter>
