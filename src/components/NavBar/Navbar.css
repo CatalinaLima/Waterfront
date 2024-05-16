@@ -1,0 +1,15 @@
+.logo_navbar{
+    height: 25px;
+    margin: 0px 100px;
+}
+
+.arrow_navbar{
+    height: 50px;
+}
+
+.Navbar{
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

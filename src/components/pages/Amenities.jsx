@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
+import amenities from '../../data/amenities';
 import './Amenities.css'
-import amenities from '../data/amenities'
-
-import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 
 function Amenities() {
+
   return (
     <>
       <div className='amenities_container'>
@@ -13,9 +13,10 @@ function Amenities() {
           {amenities.map((item) => (
             <Link key={item.id} to={`/amenities/${item.id}`}>
               <div className='icons'>
-                <img className='icon' src={item.img} alt={item.title} />
-                <p className='item_title'>{item.title} {item.quantity}</p>
-                <p className='item_quantity'>{item.quantity}</p>
+                <img className='icon' src={item.icon} alt={item.title} />
+                <p className='item_title'>{item.title}</p>
+                {/* Mostrar la cantidad pasada como prop */}
+                <p className='item_quantity'>Q: {}</p>
               </div>
             </Link>
           ))}
@@ -25,5 +26,11 @@ function Amenities() {
   )
 }
 
+
 export default Amenities;
+
+
+
+
+
 

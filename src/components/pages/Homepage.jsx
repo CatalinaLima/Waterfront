@@ -9,7 +9,7 @@ function Homepage() {
     <div className='hp_container'>
         <img className='logo' src="/public/logo.png" alt="logo" />
         <Link to = '/amenities' >
-        <img className='arrow' src="/public/arrow.png" alt="arrow" />
+        <img className='arrow3' src="/public/arrowsx3.png" alt="arrow" />
         </Link>
     </div>
     </>
