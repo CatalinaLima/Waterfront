@@ -1,3 +1,4 @@
+// amenitiesContext.js
 import { createContext, useState, useContext } from 'react';
 
 const AmenitiesContext = createContext();
@@ -5,10 +6,10 @@ const AmenitiesContext = createContext();
 export const useAmenities = () => useContext(AmenitiesContext);
 
 export const AmenitiesProvider = ({ children, amenitiesData }) => {
-  const [amenitiesDataState, setAmenitiesData] = useState(amenitiesData);
+  const [amenities, setAmenities] = useState(amenitiesData);
 
   return (
-    <AmenitiesContext.Provider value={{ amenitiesData: amenitiesDataState, setAmenitiesData }}>
+    <AmenitiesContext.Provider value={{ amenities, setAmenities }}>
       {children}
     </AmenitiesContext.Provider>
   );

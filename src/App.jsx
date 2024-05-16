@@ -8,10 +8,11 @@ import AmDetailContainer from './components/AmDetailContainer/AmDetailContainer'
 import NavBar from './components/NavBar/Navbar'
 
 import { AmenitiesProvider } from './context/amenitiesContext';
+import amenitiesData from '../src/data/amenities';
 
 function App() {
   return (
-    <AmenitiesProvider>
+    <AmenitiesProvider amenitiesData={amenitiesData}>
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -25,6 +26,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 
