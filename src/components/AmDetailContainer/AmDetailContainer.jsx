@@ -43,6 +43,7 @@ function AmDetailContainer () {
                     <button className='button' onClick={increaseQuantity}>IM HERE!</button>
                     <button className='button' onClick={decreaseQuantity}>IM NOT HERE ANYMORE!</button>
                 </div>
+
             </div>
         </>
     )
