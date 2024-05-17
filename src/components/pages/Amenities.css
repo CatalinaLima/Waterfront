@@ -3,7 +3,7 @@
     height: 100%;
     width: auto;
     justify-content: flex-start;
-    background-image: url('/public/background_amenities.jpg'); /* Ruta relativa a la imagen */
+    background-image: url('/public/assets/background_amenities.jpg'); /* Ruta relativa a la imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área completa del componente */
     background-position: center;
     border-radius: 50px 50px 0px 0px;

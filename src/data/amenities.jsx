@@ -2,10 +2,10 @@ const amenities = [
     {
       id: 1,
       title: "Jacuzzi",
-      icon: '/public/jacuzzi_icon.png',
+      icon: '',
       quantity: 0,
       description: 'Jacuzzi up to 15 people.',
-      img: '/public/jacuzzi_img.jpg'
+      img: '/public/assets/jacuzzi_img.jpg'
     },
     {
       id: 2,
