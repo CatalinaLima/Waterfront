@@ -15,10 +15,10 @@ export default function NavBar() {
     return (
         <nav className="Navbar">
             <Link to="/amenities">
-                <img className='arrow_navbar' src="/public/assets/arrow.png" alt="arrow" />
+                <img className='arrow_navbar' src="/assets/arrow.png" alt="arrow" />
             </Link>
             <Link to="/">
-                <img className='logo_navbar' src="/public/assets/logo.png" alt="logo" />
+                <img className='logo_navbar' src="/assets/logo.png" alt="logo" />
             </Link>
         </nav>
         );
