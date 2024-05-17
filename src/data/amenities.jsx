@@ -2,18 +2,18 @@ const amenities = [
     {
       id: 1,
       title: "Jacuzzi",
-      icon: '/public/assets/jacuzzi_icon.png',
+      icon: '/assets/jacuzzi_icon.png',
       quantity: 0,
       description: 'Jacuzzi up to 15 people.',
-      img: '/public/assets/jacuzzi_img.jpg'
+      img: '/assets/jacuzzi_img.jpg'
     },
     {
       id: 2,
       title: "Sauna",
-      icon: '/public/assets/sauna_icon.png',
+      icon: '/assets/sauna_icon.png',
       quantity: 0,
       description: 'Sauna up to 10 people.',
-      img: '/public/assets/sauna_img.jpg'
+      img: '/assets/sauna_img.jpg'
     },
     {
       id: 3,
