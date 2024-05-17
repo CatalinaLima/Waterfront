@@ -18,18 +18,18 @@ const amenities = [
     {
       id: 3,
       title: "Yoga studio",
-      icon: '/public/assets/yoga_icon.png',
+      icon: '/assets/yoga_icon.png',
       quantity: 0,
       description: 'Yoga up to 40 people from 7am to 11pm.',
-      img: '/public/assets/yoga_img.jpg'
+      img: '/assets/yoga_img.jpg'
     },
     {
       id: 4,
       title: "Gym",
-      icon: '/public/assets/gym_icon.png',
+      icon: '/assets/gym_icon.png',
       quantity: 0,
       description: 'Gym up to 40 people from 7am to 11pm..',
-      img: '/public/assets/gym_img.jpg'
+      img: '/assets/gym_img.jpg'
     },
   ]
 
