@@ -1,13 +1,17 @@
+
 import './AmDetailContainer.css'
 import { useParams } from 'react-router-dom';
 
 
 import { useAmenities } from '../../context/amenitiesContext';
+import { useState } from 'react';
 
 function AmDetailContainer () {
     const { amenities, setAmenities } = useAmenities();
     const { id } = useParams();
     const amenitie = amenities.find((item) => item.id.toString() === id);
+
+    const [activeButton, setActiveButton] = useState(null);
 
     const increaseQuantity = () => {
         setAmenities(prevAmenities => 
@@ -15,6 +19,7 @@ function AmDetailContainer () {
                 item.id === amenitie.id ? { ...item, quantity: item.quantity + 1 } : item
             )
         );
+        setActiveButton('increase');
     };
 
     const decreaseQuantity = () => {
@@ -24,6 +29,7 @@ function AmDetailContainer () {
                     item.id === amenitie.id ? { ...item, quantity: item.quantity - 1 } : item
                 )
             );
+            setActiveButton('decrease');
         }
     };
 
@@ -35,14 +41,24 @@ function AmDetailContainer () {
         <>
             <div className='amenities_container'>
                 <div className='info_container'>
-                    <h1 className='title'>{amenitie.title}</h1>
-                    <p className='paragraph'>{amenitie.description}</p>
+                    <h1 className='title_adc'>{amenitie.title}</h1>
+                    <p className='paragraph_adc'>{amenitie.description}</p>
                     <img className='amenities_img' src={amenitie.img} alt="" />
                 </div>
                 <div className='buttons'>
-                    <button className='button' onClick={increaseQuantity}>IM HERE!</button>
-                    <button className='button' onClick={decreaseQuantity}>IM NOT HERE ANYMORE!</button>
-                </div>
+                <button 
+                    className={`button ${activeButton === 'increase' ? 'active' : ''}`} 
+                    onClick={increaseQuantity}
+                >
+                    IM HERE!
+                </button>
+                <button 
+                    className={`button ${activeButton === 'decrease' ? 'active' : ''}`} 
+                    onClick={decreaseQuantity}
+                >
+                    IM NOT HERE ANYMORE!
+                </button>
+            </div>
 
             </div>
         </>

@@ -1,7 +1,7 @@
 const amenities = [
     {
       id: 1,
-      title: "Jacuzzi",
+      title: "JACUZZI",
       icon: '/assets/jacuzzi_icon.png',
       quantity: 0,
       description: 'Jacuzzi up to 15 people.',
@@ -9,7 +9,7 @@ const amenities = [
     },
     {
       id: 2,
-      title: "Sauna",
+      title: "SAUNA",
       icon: '/assets/sauna_icon.png',
       quantity: 0,
       description: 'Sauna up to 10 people.',
@@ -17,7 +17,7 @@ const amenities = [
     },
     {
       id: 3,
-      title: "Yoga studio",
+      title: "YOGA STUDIO",
       icon: '/assets/yoga_icon.png',
       quantity: 0,
       description: 'Yoga up to 40 people from 7am to 11pm.',
@@ -25,7 +25,7 @@ const amenities = [
     },
     {
       id: 4,
-      title: "Gym",
+      title: "GYM",
       icon: '/assets/gym_icon.png',
       quantity: 0,
       description: 'Gym up to 40 people from 7am to 11pm..',

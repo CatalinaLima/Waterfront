@@ -10,7 +10,7 @@ function Amenities() {
   return (
       <>
           <div className='amenities_container'>
-              <h1 className='title'>AMENITIES</h1>
+              <h1 className='title'>A M E N I T I E S</h1>
               <p className='paragraph'>You can now check availability before showing up. Organize your plans!</p>
               <h2 className='h2_a'>HOW MANY PEOPLE?</h2>
               <div className='amenities_icons'>
