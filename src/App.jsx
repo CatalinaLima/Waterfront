@@ -1,6 +1,6 @@
 import './App.css'
 
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom'
 
 import Homepage from './components/pages/Homepage'
 import Amenities from './components/pages/Amenities'
@@ -14,14 +14,25 @@ function App() {
   return (
     <AmenitiesProvider amenitiesData={amenitiesData}>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/amenities' element={<Amenities />} />
-          <Route path='/amenities/:id' element={<AmDetailContainer />} />
-        </Routes>
+        <Main />
       </BrowserRouter>
     </AmenitiesProvider>
+  );
+}
+
+function Main() {
+  const location = useLocation();
+  const hideNavBar = location.pathname === '/';
+
+  return (
+    <>
+      {!hideNavBar && <NavBar />}
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='/amenities' element={<Amenities />} />
+        <Route path='/amenities/:id' element={<AmDetailContainer />} />
+      </Routes>
+    </>
   );
 }
 

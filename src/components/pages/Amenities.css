@@ -3,11 +3,11 @@
     height: 100%;
     width: auto;
     justify-content: flex-start;
-    background-image: url('/public/assets/background_amenities.jpg'); /* Ruta relativa a la imagen */
+    background-image: url('/public/assets/background_hp.jpg'); /* Ruta relativa a la imagen */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el área completa del componente */
     background-position: center;
     border-radius: 50px 50px 0px 0px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-family: 'Helvetica';
     flex-direction: column;
 }
@@ -29,12 +29,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+
 }
 
 .icon{
-    height: 180px;
-    margin: 0px;
+
+    margin-top: 20px;
+    width: 200px;
 }
 
 .item_title{
@@ -48,13 +49,20 @@
 }
 
 .item_quantity{
-    background-color: rgb(128, 165, 153);
+    background-color: inherit;
     margin: 5px;
-    width: 50px;
-    font-size: 20px;
-    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 50px;
     color: black;
     font-weight: 700px;
+    border-color: black;
+    border-style:solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons{
@@ -63,3 +71,8 @@
     align-items: center;
 }
 
+.h2_a{
+    color: black;
+    font-size: 25px;
+    font-weight:bold;
+}
